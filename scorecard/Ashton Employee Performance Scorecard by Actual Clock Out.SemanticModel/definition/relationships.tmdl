@@ -229,3 +229,31 @@ relationship c53cdca7-89b5-4d82-865f-323f5592307f
 	fromColumn: 'Clock In Clock Out'.End_Time
 	toColumn: LocalDateTable_f97887b0-00c9-4227-97c8-11f94f26c192.Date
 
+relationship 16083228-3b8a-4db1-b138-b73a7c98bdb0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ashton_picking_exception_hj_sql_server_df.transaction_datetime
+	toColumn: LocalDateTable_567824b1-581f-40df-877a-7f58bbeddce1.Date
+
+relationship ef1076a7-a3d7-4374-93df-51031b62489d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ashton_putaway_exception_hj_sql_server_df.exception_date
+	toColumn: LocalDateTable_65c4dbcf-344d-4f33-b69b-ed4e9ef40bd9.Date
+
+relationship 2e345f22-a185-4baf-9419-dbf6fdbd8626
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ashton_picking_exception_hj_sql_server_df.shift_date
+	toColumn: LocalDateTable_b7f7aa99-cfca-4940-835f-f1b1f72d8d40.Date
+
+relationship fdffa1da-d1e3-40bc-8b18-82546525c63b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ashton_putaway_exception_hj_sql_server_df.shift_date
+	toColumn: LocalDateTable_b3b2ae16-9942-45a2-9ee5-a9354424afff.Date
+
+relationship aafdfa01-6763-898a-8554-76d4ddc6952f
+	fromColumn: ashton_picking_exception_hj_sql_server_df.'master key'
+	toColumn: 'Clock In Clock Out'.'master key'
+
+relationship b28f9646-4c55-cb17-d601-1c2896f823b3
+	fromColumn: ashton_putaway_exception_hj_sql_server_df.'master key'
+	toColumn: 'Clock In Clock Out'.'master key'
+

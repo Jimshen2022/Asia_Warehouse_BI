@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["F6 Letdowns","Calendar","Exceptions","Sup Lead List","SAM Overages","SAM Lock Values","Clock In Clock Out","Start & End of Day","Summed Process Report","pph","goals","GAP","Definition of Calculations","Performance Goals","Conditional Formatting Formulas","Indirect History","Pick Run Values","Battery Change","Start/End of Day"]
+annotation PBI_QueryOrder = ["F6 Letdowns","Calendar","Exceptions","Sup Lead List","SAM Overages","SAM Lock Values","Clock In Clock Out","Start & End of Day","Summed Process Report","pph","goals","GAP","Definition of Calculations","Performance Goals","Conditional Formatting Formulas","Indirect History","Pick Run Values","Battery Change","Start/End of Day","ashton_picking_exception_hj_sql_server_df","ashton_putaway_exception_hj_sql_server_df","dim_ashton_employee_information_hj_sql_server_df","A_Measure"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -63,6 +63,14 @@ ref table LocalDateTable_c197a1d8-91da-48ba-bd06-61f393012a30
 ref table LocalDateTable_d642b280-1d05-4ac7-804d-b4fd14edfe1a
 ref table LocalDateTable_6c1eb866-91a9-438b-92f5-62f671975009
 ref table LocalDateTable_f97887b0-00c9-4227-97c8-11f94f26c192
+ref table ashton_picking_exception_hj_sql_server_df
+ref table LocalDateTable_567824b1-581f-40df-877a-7f58bbeddce1
+ref table ashton_putaway_exception_hj_sql_server_df
+ref table LocalDateTable_65c4dbcf-344d-4f33-b69b-ed4e9ef40bd9
+ref table dim_ashton_employee_information_hj_sql_server_df
+ref table LocalDateTable_b7f7aa99-cfca-4940-835f-f1b1f72d8d40
+ref table LocalDateTable_b3b2ae16-9942-45a2-9ee5-a9354424afff
+ref table A_Measure
 
 ref cultureInfo en-US
 

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a4065236328e04e59773",
   "position": {
-    "x": 799.2,
-    "y": 156.96,
+    "x": 799.48553054662375,
+    "y": 157.42765273311898,
     "z": 9000,
-    "height": 555.84,
-    "width": 234.72,
+    "height": 553.56913183279744,
+    "width": 234.59807073954983,
     "tabOrder": 9000
   },
   "visual": {
@@ -15,6 +15,34 @@
       "queryState": {
         "Data": {
           "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "Picking Exceptions(Major)"
+                }
+              },
+              "queryRef": "A_Measure.Picking Exceptions(Major)",
+              "nativeQueryRef": "Picking Exceptions(Major)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "Putaway Exceptions(Major)"
+                }
+              },
+              "queryRef": "A_Measure.Putaway Exceptions(Major)",
+              "nativeQueryRef": "Putaway Exceptions(Major)"
+            },
             {
               "field": {
                 "Measure": {
@@ -96,10 +124,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Exceptions"
+                    "Entity": "A_Measure"
                   }
                 },
-                "Property": "F1 Exceptions"
+                "Property": "Picking Exceptions(Major)"
               }
             },
             "direction": "Descending"
@@ -142,6 +170,20 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.Putaway Exceptions(Major)"
+          }
         }
       ],
       "label": [
@@ -162,6 +204,27 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.Putaway Exceptions(Major)"
           }
         }
       ],
@@ -298,6 +361,22 @@
           },
           "selector": {
             "metadata": "Exceptions.Shipping F7 Exceptions"
+          }
+        }
+      ],
+      "cardImage": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.Putaway Exceptions(Major)"
           }
         }
       ]
