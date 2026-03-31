@@ -1,0 +1,785 @@
+table Dim_Calendar
+	lineageTag: 836f22ba-3b36-4e5e-8e4c-095ad1ad97b7
+
+	column Date_Key
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b418cf9-9878-47ac-be77-75a00b49193d
+		summarizeBy: count
+		sourceColumn: Date_Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mapics_Date
+		dataType: int64
+		formatString: 0
+		lineageTag: c17d6484-2642-41f0-b59d-33e0f343d1ae
+		summarizeBy: sum
+		sourceColumn: Mapics_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date_ID
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2e71d657-5b32-4d40-b9e9-239b40a9835f
+		summarizeBy: none
+		sourceColumn: Date_ID
+
+		variation Variation
+			isDefault
+			relationship: cc5e92e8-9768-4373-ad77-21ac3c8379fb
+			defaultHierarchy: LocalDateTable_95189aa6-09fd-4d85-b7b1-ff0668b21894.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DateTime_ID
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a1b19f80-6cf7-4073-8659-2e4e2733a0b8
+		summarizeBy: none
+		sourceColumn: DateTime_ID
+
+		variation Variation
+			isDefault
+			relationship: e1cdea12-5e9f-45a1-b44f-927d596ac0d0
+			defaultHierarchy: LocalDateTable_a1795969-80c1-4938-9bfc-37fe325f53fd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e4e449aa-68fc-4a0c-a266-4441c21accf6
+		summarizeBy: none
+		sourceColumn: Calendar_Date
+
+		variation Variation
+			isDefault
+			relationship: 4da28776-f264-4f21-8759-4ae7ae4d81b5
+			defaultHierarchy: LocalDateTable_eb42cbe9-80da-49fb-8f6e-df319dbbd292.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Day_Of_Week_Name
+		dataType: string
+		lineageTag: 1bc2ec12-cca6-4d4a-9b71-3cad398aa8f8
+		summarizeBy: none
+		sourceColumn: Calendar_Day_Of_Week_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Day_Of_Week
+		dataType: int64
+		formatString: 0
+		lineageTag: 39704397-d3c8-4704-9c6a-83b41e37c043
+		summarizeBy: sum
+		sourceColumn: Calendar_Day_Of_Week
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Week_Number_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: 04c09a5e-9434-46c8-be2e-5e257cc6e7fe
+		summarizeBy: sum
+		sourceColumn: Calendar_Week_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Date_Of_Calendar_Week
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e669a365-c16b-4f10-a89c-447f7eb52754
+		summarizeBy: none
+		sourceColumn: First_Date_Of_Calendar_Week
+
+		variation Variation
+			isDefault
+			relationship: 61bffb0c-ef6e-4abc-920b-6938d06fecd9
+			defaultHierarchy: LocalDateTable_26c85dbc-df6b-4a8f-8c6f-a66ce9e7348e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Date_Of_Calendar_Week
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4f3a21a6-19bd-4b53-b619-274f93a123fd
+		summarizeBy: none
+		sourceColumn: Last_Date_Of_Calendar_Week
+
+		variation Variation
+			isDefault
+			relationship: 169433cf-fbec-4bec-8ca6-9174a9e94fa6
+			defaultHierarchy: LocalDateTable_d386e685-d95a-4c66-922c-242fc11790e4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Month
+		dataType: string
+		lineageTag: 0482b379-fdff-4f35-960d-2378e2aa1fc7
+		summarizeBy: none
+		sourceColumn: Calendar_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Month_Number
+		dataType: int64
+		formatString: 0
+		lineageTag: 0fdb54ef-4c10-4635-91c9-117e650d1a0c
+		summarizeBy: sum
+		sourceColumn: Calendar_Month_Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Year_Month_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: f299bc8a-c2f0-4892-ac78-609465f9f8af
+		summarizeBy: sum
+		sourceColumn: Calendar_Year_Month_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Day_Of_Month
+		dataType: int64
+		formatString: 0
+		lineageTag: bb6408c7-abee-42be-83ca-01743ac70eb9
+		summarizeBy: sum
+		sourceColumn: Calendar_Day_Of_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Week_Of_Month
+		dataType: int64
+		formatString: 0
+		lineageTag: 7df8a544-4f92-45c1-a3e5-26216c660146
+		summarizeBy: sum
+		sourceColumn: Calendar_Week_Of_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Date_Of_Calendar_Month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f772868f-af9f-4c22-a863-7054a2bd8c7b
+		summarizeBy: none
+		sourceColumn: First_Date_Of_Calendar_Month
+
+		variation Variation
+			isDefault
+			relationship: 26cff5bc-09b2-494e-b175-5865cfb40e48
+			defaultHierarchy: LocalDateTable_76d79914-a7d2-4df7-bc9e-d4c7b716eb9d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Date_Of_Calendar_Month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6138b16b-6d29-47da-9b30-818184c435f8
+		summarizeBy: none
+		sourceColumn: Last_Date_Of_Calendar_Month
+
+		variation Variation
+			isDefault
+			relationship: 01f6a4e4-3d86-4b06-837c-736e04287e5b
+			defaultHierarchy: LocalDateTable_87851dd5-f61a-48e9-9c7a-404a444550e9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Quarter_Number
+		dataType: int64
+		formatString: 0
+		lineageTag: 41ed7134-5beb-4fc3-8c9f-d892ea7e3776
+		summarizeBy: sum
+		sourceColumn: Calendar_Quarter_Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Year_Quarter_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: bae34402-1401-4d5c-8a55-f02c44988bb6
+		summarizeBy: sum
+		sourceColumn: Calendar_Year_Quarter_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Semester
+		dataType: int64
+		formatString: 0
+		lineageTag: da3050ae-2081-4beb-89c0-33001ab9c3c4
+		summarizeBy: sum
+		sourceColumn: Calendar_Semester
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Year_Semester_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: b9fb2d49-19c3-4b93-a9c7-687f7e4d9424
+		summarizeBy: sum
+		sourceColumn: Calendar_Year_Semester_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: bd5009a5-a91b-4940-8c05-1f6e4d43fa2e
+		summarizeBy: sum
+		sourceColumn: Calendar_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Day_Of_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: aa973cc9-0a24-4b92-8941-510d56ac26d8
+		summarizeBy: sum
+		sourceColumn: Calendar_Day_Of_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Week_Of_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 7921f65d-b96d-476b-9087-f2de6484cff3
+		summarizeBy: sum
+		sourceColumn: Calendar_Week_Of_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5b792565-a7ab-42ca-9abc-939c44d2ecf3
+		summarizeBy: none
+		sourceColumn: Fiscal_Date
+
+		variation Variation
+			isDefault
+			relationship: dc83fba1-2133-4ede-97fa-f55c1a0ad474
+			defaultHierarchy: LocalDateTable_24b0d175-87d4-4a14-985b-bc1e10c2b177.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Day_Of_Week_Name
+		dataType: string
+		lineageTag: 336a2702-439c-4c74-83a2-87a87b5787d0
+		summarizeBy: none
+		sourceColumn: Fiscal_Day_Of_Week_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Day_Of_Week
+		dataType: int64
+		formatString: 0
+		lineageTag: 4060d3bd-09a5-4a46-89b2-582ea20ca042
+		summarizeBy: sum
+		sourceColumn: Fiscal_Day_Of_Week
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Week_Number_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: ea238f6a-2e57-4038-b16d-4bf740440db9
+		summarizeBy: sum
+		sourceColumn: Fiscal_Week_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Date_Of_Fiscal_Week
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: dc8ae2b7-79ae-4f15-8ef9-0cd60025db7e
+		summarizeBy: none
+		sourceColumn: First_Date_Of_Fiscal_Week
+
+		variation Variation
+			isDefault
+			relationship: 1048c667-e240-4c8e-a088-ce27fb9b8695
+			defaultHierarchy: LocalDateTable_e52b1011-3968-4d9f-ad6f-1f3de2495fb1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Date_Of_Fiscal_Week
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2a9f5778-6ad1-4049-ab94-981ff89ad18e
+		summarizeBy: none
+		sourceColumn: Last_Date_Of_Fiscal_Week
+
+		variation Variation
+			isDefault
+			relationship: c593fbe4-e084-4b23-82fa-9f5f26ecd129
+			defaultHierarchy: LocalDateTable_fda73478-aba8-462b-b362-f21d8ae39ad4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Month
+		dataType: string
+		lineageTag: 7a0da559-9139-4fba-9877-d141f165e009
+		summarizeBy: none
+		sourceColumn: Fiscal_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Month_Number
+		dataType: int64
+		formatString: 0
+		lineageTag: 8942d26b-1d07-467f-b6d4-4302e7c52810
+		summarizeBy: sum
+		sourceColumn: Fiscal_Month_Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Date_Of_Fiscal_Month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2efd21a1-e3f3-4f69-a84b-a96280262dd9
+		summarizeBy: none
+		sourceColumn: First_Date_Of_Fiscal_Month
+
+		variation Variation
+			isDefault
+			relationship: deeb1a75-a91e-40f2-81ce-a827ea3536b4
+			defaultHierarchy: LocalDateTable_529f4275-3226-48cb-ad74-1e272aebcb48.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Date_Of_Fiscal_Month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 43f4340a-37be-414c-8062-9e978b82a0a7
+		summarizeBy: none
+		sourceColumn: Last_Date_Of_Fiscal_Month
+
+		variation Variation
+			isDefault
+			relationship: 741dccba-3294-4ef7-b90e-b8ecc3070b52
+			defaultHierarchy: LocalDateTable_76c8aa75-5349-4fb1-8c53-03066d463516.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Day_Of_Month
+		dataType: int64
+		formatString: 0
+		lineageTag: f56b449b-86cc-4121-81da-9deaeb058ce5
+		summarizeBy: sum
+		sourceColumn: Fiscal_Day_Of_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Week_Of_Month
+		dataType: int64
+		formatString: 0
+		lineageTag: ad85ec13-f0dc-43e3-aca0-d3645dd46aff
+		summarizeBy: sum
+		sourceColumn: Fiscal_Week_Of_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Quarter_Number
+		dataType: int64
+		formatString: 0
+		lineageTag: e91045f7-c0da-4a8b-95c7-ab10b2f8e4da
+		summarizeBy: sum
+		sourceColumn: Fiscal_Quarter_Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Semester
+		dataType: int64
+		formatString: 0
+		lineageTag: 80d4bf75-7341-4202-aee3-41143dd25f0b
+		summarizeBy: sum
+		sourceColumn: Fiscal_Semester
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Year_Semester_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: 3aa788fe-2043-4e7d-bf2a-bb53c9f77a9d
+		summarizeBy: sum
+		sourceColumn: Fiscal_Year_Semester_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: c9201761-c32f-4c4d-89be-52938cb1186c
+		summarizeBy: sum
+		sourceColumn: Fiscal_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Day_Of_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f07905b-48fc-4593-b73e-e5d45f2c18cd
+		summarizeBy: sum
+		sourceColumn: Fiscal_Day_Of_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Week_Of_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 5cc13729-534b-45bc-bf48-7dc392701ecc
+		summarizeBy: sum
+		sourceColumn: Fiscal_Week_Of_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Date_Of_Fiscal_Year
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 818c1e9c-9564-429a-8053-fb654131e870
+		summarizeBy: none
+		sourceColumn: Last_Date_Of_Fiscal_Year
+
+		variation Variation
+			isDefault
+			relationship: a6e9c345-78df-48a7-9dea-996d841c0de8
+			defaultHierarchy: LocalDateTable_4c3ecccd-0309-4ba4-935c-0e839b8251d0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Holiday_Indicator
+		dataType: string
+		lineageTag: 2f993a92-93aa-42a1-995d-92316a8788bf
+		summarizeBy: none
+		sourceColumn: Holiday_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column Holiday_Name
+		dataType: string
+		lineageTag: b478d6a6-e4dc-49e2-b5fb-64bb982d711c
+		summarizeBy: none
+		sourceColumn: Holiday_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Working_Day_Indicator
+		dataType: string
+		lineageTag: 4daf78ed-62bd-43cf-9b25-91fc65e7d6a6
+		summarizeBy: none
+		sourceColumn: Working_Day_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weekday_Weekend
+		dataType: string
+		lineageTag: 86951bcc-04cc-4090-99e4-7decf4e1f4b8
+		summarizeBy: none
+		sourceColumn: Weekday_Weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Year_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: 06811da3-5204-4daa-ba5a-8165d7e9bdf5
+		summarizeBy: sum
+		sourceColumn: Fiscal_Year_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Quarter_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: ee731263-b2ab-4b73-84d3-9ea135c9b233
+		summarizeBy: sum
+		sourceColumn: Fiscal_Quarter_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Month_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e0d9625-2f3a-40b9-aaed-5d8ad042df8f
+		summarizeBy: sum
+		sourceColumn: Fiscal_Month_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Week_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e8b2162-a40e-40d3-86c1-2a0fd7b0c8a4
+		summarizeBy: sum
+		sourceColumn: Fiscal_Week_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Day_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: e2919438-2df9-45da-a50b-76c68f8d9386
+		summarizeBy: sum
+		sourceColumn: Fiscal_Day_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Year_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ed55157-4b52-4eb7-b559-75cdf74e7fc3
+		summarizeBy: sum
+		sourceColumn: Calendar_Year_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Quarter_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: ff60e553-5318-4717-bda6-bb7f981c5915
+		summarizeBy: sum
+		sourceColumn: Calendar_Quarter_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Calendar_Month_Diff
+		dataType: int64
+		formatString: 0
+		lineageTag: ea1602f7-0908-43cb-9f42-e9c560e664d1
+		summarizeBy: sum
+		sourceColumn: Calendar_Month_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+	column Yesterday_Flag
+		dataType: int64
+		formatString: 0
+		lineageTag: ce932397-50e6-4ada-84f3-71c90a8aacb3
+		summarizeBy: sum
+		sourceColumn: Yesterday_Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_WTD_Flag
+		dataType: int64
+		formatString: 0
+		lineageTag: c705a58a-3541-4a4b-8712-b14783455ee8
+		summarizeBy: sum
+		sourceColumn: Fiscal_WTD_Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_MTD_Flag
+		dataType: int64
+		formatString: 0
+		lineageTag: 57422b11-9c65-4241-8b6a-ec9277bee44c
+		summarizeBy: sum
+		sourceColumn: Fiscal_MTD_Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_YTD_Flag
+		dataType: int64
+		formatString: 0
+		lineageTag: 691aea71-1227-4456-a690-028d11e9f501
+		summarizeBy: sum
+		sourceColumn: Fiscal_YTD_Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Month_Number_As_Integer
+		dataType: string
+		lineageTag: f7c1bfdf-3a95-45d6-b0d7-49ace9cf9dad
+		summarizeBy: none
+		sourceColumn: Fiscal_Month_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fiscal_Year_Quarter_As_Integer
+		dataType: string
+		lineageTag: ae2e1c93-0065-421c-9fe3-56254f64042e
+		summarizeBy: none
+		sourceColumn: Fiscal_Year_Quarter_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6e4eb6be-10b4-422a-807a-da3e7b82e73a
+		summarizeBy: none
+		sourceColumn: 2Y_Fiscal_Date
+
+		variation Variation
+			isDefault
+			relationship: 2034c391-0d1b-4062-8b52-5816ddd91d6b
+			defaultHierarchy: LocalDateTable_fc6fbe04-34ab-4551-bc6c-367ae6dacae3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Month_Number_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: 100ea3b9-b4d1-435e-b35a-f8d1c0190d04
+		summarizeBy: sum
+		sourceColumn: 2Y_Fiscal_Month_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Week_Number_As_Integer
+		dataType: string
+		lineageTag: cedfced0-2c63-47c8-b1ae-c31d95fb43cb
+		summarizeBy: none
+		sourceColumn: 2Y_Fiscal_Week_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Year​
+		dataType: int64
+		formatString: 0
+		lineageTag: f89f9fe3-97af-4d50-af25-a7ab8e1e91af
+		summarizeBy: sum
+		sourceColumn: 2Y_Fiscal_Year​
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Year_Quarter_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a1bf4c2-76a5-45f1-b385-f965554599a7
+		summarizeBy: sum
+		sourceColumn: 2Y_Fiscal_Year_Quarter_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2Y_Fiscal_Year_Semester_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: 18caec31-b21b-4afd-a3b1-7ab6423ac2c9
+		summarizeBy: sum
+		sourceColumn: 2Y_Fiscal_Year_Semester_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6077cd3c-552e-4a37-a4f9-80972907d1e2
+		summarizeBy: none
+		sourceColumn: LY_Fiscal_Date
+
+		variation Variation
+			isDefault
+			relationship: 09601dec-743e-4778-9d37-14de71bdb1c9
+			defaultHierarchy: LocalDateTable_945b09c7-67c6-46de-ae48-a9f1ddeaee0e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Month_Number_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: cfb60d35-3542-4778-bc21-c8513f9f5d6b
+		summarizeBy: sum
+		sourceColumn: LY_Fiscal_Month_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Week_Number_As_Integer
+		dataType: string
+		lineageTag: 08e063fb-dfa2-45d9-ba13-a7e19db7d9bf
+		summarizeBy: none
+		sourceColumn: LY_Fiscal_Week_Number_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: f22b2958-5b29-496c-82a5-1d306361a351
+		summarizeBy: sum
+		sourceColumn: LY_Fiscal_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Year_Quarter_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: b91d9057-3ba0-4715-a47f-37527966a602
+		summarizeBy: sum
+		sourceColumn: LY_Fiscal_Year_Quarter_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column LY_Fiscal_Year_Semester_As_Integer
+		dataType: int64
+		formatString: 0
+		lineageTag: c1c3f190-6de2-4f2f-94f3-a6889417339e
+		summarizeBy: sum
+		sourceColumn: LY_Fiscal_Year_Semester_As_Integer
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Day_Of_Calendar_Month_Indicator
+		dataType: string
+		lineageTag: 29f9e00a-5c90-44c9-ab50-0476133a4b8f
+		summarizeBy: none
+		sourceColumn: First_Day_Of_Calendar_Month_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Day_Of_Fiscal_Month_Indicator
+		dataType: string
+		lineageTag: ef1e737d-eccb-49ce-81dd-36f08bb5d9bc
+		summarizeBy: none
+		sourceColumn: First_Day_Of_Fiscal_Month_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Day_Of_Calendar_Month_Indicator
+		dataType: string
+		lineageTag: f4be6fa1-2a67-44ef-97f6-37bb6f04432b
+		summarizeBy: none
+		sourceColumn: Last_Day_Of_Calendar_Month_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column Last_Day_Of_Fiscal_Month_Indicator
+		dataType: string
+		lineageTag: 35834fdc-bc7e-4a8d-a91c-886b80d937c2
+		summarizeBy: none
+		sourceColumn: Last_Day_Of_Fiscal_Month_Indicator
+
+		annotation SummarizationSetBy = Automatic
+
+	column First_Date_Of_Fiscal_Year
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fb8fd224-fc2f-40d9-bc91-d753c27f6765
+		summarizeBy: none
+		sourceColumn: First_Date_Of_Fiscal_Year
+
+		variation Variation
+			isDefault
+			relationship: c24398a6-0213-4cc8-9920-2e67787e4567
+			defaultHierarchy: LocalDateTable_aac93db6-2b1d-403b-a363-be3ce0e88ab2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Calendar = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ashley-edw.database.windows.net", "ASHLEY_EDW", [Query=("  " &
+				            "SELECT *#(lf)  FROM [PowerBI_Enterprise].[DimDate]#(lf)  --WHERE Date_ID between '12/1/2021' and getdate() #(lf)  WHERE CAST(Date_ID AS DATE) BETWEEN DATEADD(Month,-2,GETDATE()) AND GETDATE()"), CreateNavigationProperties=false, CommandTimeout=#duration(0, 2, 40, 0)]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Date_ID", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
