@@ -2393,6 +2393,258 @@ table A_Measure
 		displayFolder: I06_Individual UPH Putaway
 		lineageTag: de74d407-ebf9-49cd-8b3a-c9449ee4f24a
 
+	measure 'I02_Emp Picking Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I02_Individual Picking PPH]
+			        ),
+			        [__PPH] >= 26 && [__PPH] < 36
+			    )
+			)
+		displayFolder: I02_Individual Picking Hours
+		lineageTag: 38b5a033-7448-4f4a-893d-8dd15162d8d4
+
+	measure 'I02_Emp Picking Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I02_Individual Picking PPH]
+			        ),
+			        [__PPH] >= 36
+			    )
+			)
+		displayFolder: I02_Individual Picking Hours
+		lineageTag: ae313865-afb5-4ec2-b40e-54afd829aa5b
+
+	measure 'I02_Emp Picking Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I02_Individual Picking PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 26
+			    )
+			)
+		displayFolder: I02_Individual Picking Hours
+		lineageTag: af4640fb-6584-4479-b83c-c0365880a612
+
+	measure 'I01_Emp Loading Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I01_Individual Loading PPH]
+			        ),
+			        [__PPH] >= 36
+			    )
+			)
+		displayFolder: I01_Individual Loading Hours
+		lineageTag: 4a0ee7a6-915b-494b-99cc-e8c5e5ea847d
+
+	measure 'I01_Emp Loading Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I01_Individual Loading PPH]
+			        ),
+			        [__PPH] >= 26 && [__PPH] < 36
+			    )
+			)
+		displayFolder: I01_Individual Loading Hours
+		lineageTag: 4f48e2d9-cfa5-4e01-983c-0bc6fabb650a
+
+	measure 'I01_Emp Loading Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I01_Individual Loading PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 26
+			    )
+			)
+		displayFolder: I01_Individual Loading Hours
+		lineageTag: 5fdb0f74-49f0-4a7a-9c22-5b2752923b74
+
+	measure 'I03_Emp CG Unload Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I03_Individual CG Unload PPH]
+			        ),
+			        [__PPH] >= 50
+			    )
+			)
+		displayFolder: I03_Individual CG Unload PPH
+		lineageTag: 8f6ad55a-bbba-49cb-b18b-1f1b27dde227
+
+	measure 'I03_Emp CG Unload Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I03_Individual CG Unload PPH]
+			        ),
+			        [__PPH] >= 40 && [__PPH] < 50
+			    )
+			)
+		displayFolder: I03_Individual CG Unload PPH
+		lineageTag: 6ee55227-d22e-4022-b51f-a38016d34b1c
+
+	measure 'I03_Emp CG Unload Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I03_Individual CG Unload PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 40
+			    )
+			)
+		displayFolder: I03_Individual CG Unload PPH
+		lineageTag: 7a1fed89-0944-4d46-b8fa-3c941d28af55
+
+	measure 'I04_Emp UPH Unload Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I04_Individual UPH Unload PPH]
+			        ),
+			        [__PPH] >= 30
+			    )
+			)
+		displayFolder: I04_Individual UPH Unload
+		lineageTag: 239c82e7-6bf6-41c2-81de-37daf084b0ef
+
+	measure 'I04_Emp UPH Unload Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I04_Individual UPH Unload PPH]
+			        ),
+			        [__PPH] >= 25 && [__PPH] < 30
+			    )
+			)
+		displayFolder: I04_Individual UPH Unload
+		lineageTag: 9b72c7e3-fd98-4201-9c81-f48f4b05d083
+
+	measure 'I04_Emp UPH Unload Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I04_Individual UPH Unload PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 25
+			    )
+			)
+		displayFolder: I04_Individual UPH Unload
+		lineageTag: 7ebde227-b5f1-46bb-b1bb-d527c681ca79
+
+	measure 'I05_Emp CG Putaway Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I05_Individual CG Putaway PPH]
+			        ),
+			        [__PPH] >= 120
+			    )
+			)
+		displayFolder: I05_Individual CG Putaway
+		lineageTag: b760a26b-f976-4703-a058-b648781c1149
+
+	measure 'I05_Emp CG Putaway Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I05_Individual CG Putaway PPH]
+			        ),
+			        [__PPH] >= 100 && [__PPH] < 120
+			    )
+			)
+		displayFolder: I05_Individual CG Putaway
+		lineageTag: 3fe3fb81-4ada-4557-93dd-42ff84ac59fd
+
+	measure 'I05_Emp CG Putaway Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I05_Individual CG Putaway PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 100
+			    )
+			)
+		displayFolder: I05_Individual CG Putaway
+		lineageTag: 565ccb68-a9ed-40f2-9ace-d8a812d97d33
+
+	measure 'I06_Emp UPH Putaway Green Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I06_Individual UPH Putaway PPH]
+			        ),
+			        [__PPH] >= 30
+			    )
+			)
+		displayFolder: I06_Individual UPH Putaway
+		lineageTag: 5d88ed50-4b32-4b67-b791-dc45e6f9e46d
+
+	measure 'I06_Emp UPH Putaway Yellow Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I06_Individual UPH Putaway PPH]
+			        ),
+			        [__PPH] >= 25 && [__PPH] < 30
+			    )
+			)
+		displayFolder: I06_Individual UPH Putaway
+		lineageTag: c2b241b4-8ad3-43f4-b49a-7c666feb61df
+
+	measure 'I06_Emp UPH Putaway Red Days' =
+			COUNTROWS(
+			    FILTER(
+			        SUMMARIZECOLUMNS(
+			            'Dim_Employee_'[Employee_ID],
+			            'Dim_Calendar'[Date],
+			            "__PPH", [I06_Individual UPH Putaway PPH]
+			        ),
+			        NOT ISBLANK([__PPH]) && [__PPH] < 25
+			    )
+			)
+		displayFolder: I06_Individual UPH Putaway
+		lineageTag: 8e8f9c81-4160-43d4-8849-dae4226e8213
+
 	partition A_Measure = m
 		mode: import
 		source =

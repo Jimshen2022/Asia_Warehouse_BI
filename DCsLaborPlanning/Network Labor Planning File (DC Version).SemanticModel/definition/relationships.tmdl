@@ -23,3 +23,13 @@ relationship a9672968-f576-4ecc-a003-efd71e48376e
 	fromColumn: Fct_ReceiptsSQL.WeekEnding
 	toColumn: LocalDateTable_f0fd956b-f2c5-4355-b708-a7e1158f9fc1.Date
 
+relationship 8c9efda3-08d5-4409-852a-649c6e72b47c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Dim_Calendar.Date
+	toColumn: LocalDateTable_aa89fdb8-025a-4d10-9fc8-33c1f10b2cc4.Date
+
+relationship 85a81b42-26f1-42ed-a4a4-e0c7f5a31b98
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Dim_Calendar.SaturdayDate
+	toColumn: LocalDateTable_b1fe066d-a8da-404f-88d2-ca70c0c002c0.Date
+

@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Fct_DemandFulfillmentSQL","Fct_LaborRollups","Fct_ReceiptsSQL","Fct_InvoicingSQL"]
+annotation PBI_QueryOrder = ["Fct_DemandFulfillmentSQL","Fct_LaborRollups","Fct_ReceiptsSQL","Fct_InvoicingSQL","Dim_Calendar","Fct_DCs"]
 
 ref table Fct_DemandFulfillmentSQL
 ref table DateTableTemplate_bbc654e2-9027-4a0b-9f31-d5c90885cfa6
@@ -22,6 +22,10 @@ ref table LocalDateTable_37bc6076-4fdd-41b8-928b-98e167024b61
 ref table LocalDateTable_fb49fa0d-e475-4ab0-8875-6a59e1fc6b6e
 ref table Fct_ReceiptsSQL
 ref table LocalDateTable_f0fd956b-f2c5-4355-b708-a7e1158f9fc1
+ref table Dim_Calendar
+ref table LocalDateTable_aa89fdb8-025a-4d10-9fc8-33c1f10b2cc4
+ref table LocalDateTable_b1fe066d-a8da-404f-88d2-ca70c0c002c0
+ref table Fct_DCs
 
 ref cultureInfo en-US
 

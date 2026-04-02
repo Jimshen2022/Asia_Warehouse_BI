@@ -66,6 +66,21 @@
         },
         "type": "Advanced",
         "howCreated": "User"
+      },
+      {
+        "name": "aea2e0db07b9086e64cb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Employee_"
+              }
+            },
+            "Property": "Employee_ID"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
       }
     ]
   },
