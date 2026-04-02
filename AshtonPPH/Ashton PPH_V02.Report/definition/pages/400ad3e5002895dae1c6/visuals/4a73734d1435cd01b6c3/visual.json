@@ -13,25 +13,6 @@
     "visualType": "pivotTable",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim_Calendar"
-                    }
-                  },
-                  "Property": "Date"
-                }
-              },
-              "queryRef": "Dim_Calendar.Date",
-              "nativeQueryRef": "Date",
-              "active": true
-            }
-          ]
-        },
         "Rows": {
           "projections": [
             {
@@ -96,6 +77,79 @@
               },
               "queryRef": "A_Measure.I06_Individual UPH Putaway PPH",
               "nativeQueryRef": "I06_Individual UPH Putaway PPH"
+            },
+            {
+              "field": {
+                "SparklineData": {
+                  "Measure": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "A_Measure"
+                        }
+                      },
+                      "Property": "I06_Individual UPH Putaway PPH"
+                    }
+                  },
+                  "Groupings": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim_Calendar"
+                          }
+                        },
+                        "Property": "Date"
+                      }
+                    }
+                  ],
+                  "ApplyCalculationGroupTo": "Point"
+                }
+              },
+              "queryRef": "SparklineData(A_Measure.I06_Individual UPH Putaway PPH_[Dim_Calendar.Date])",
+              "nativeQueryRef": "I06_Individual UPH Putaway PPH by Date"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I06_Emp UPH Putaway Green Days"
+                }
+              },
+              "queryRef": "A_Measure.I06_Emp UPH Putaway Green Days",
+              "nativeQueryRef": "I06_Emp UPH Putaway Green Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I06_Emp UPH Putaway Yellow Days"
+                }
+              },
+              "queryRef": "A_Measure.I06_Emp UPH Putaway Yellow Days",
+              "nativeQueryRef": "I06_Emp UPH Putaway Yellow Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I06_Emp UPH Putaway Red Days"
+                }
+              },
+              "queryRef": "A_Measure.I06_Emp UPH Putaway Red Days",
+              "nativeQueryRef": "I06_Emp UPH Putaway Red Days"
             }
           ]
         }
@@ -262,20 +316,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "81.6666634062423D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Dim_Calendar.Date"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "247.80662857921726D"
                 }
               }
@@ -290,13 +330,55 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "112.78477600403505D"
+                  "Value": "133.40346175481784D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "A_Measure.I06_Individual UPH Putaway PPH"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "143.56112611862883D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Green Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "151.74795862159482D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Yellow Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "131.58198661017758D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Red Days"
           }
         }
       ],
@@ -306,7 +388,14 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "11D"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -314,34 +403,6 @@
         }
       ],
       "columnFormatting": [
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Dim_Calendar.Date"
-          }
-        },
         {
           "properties": {
             "styleHeader": {
@@ -380,6 +441,109 @@
           },
           "selector": {
             "metadata": "A_Measure.I06_Individual UPH Putaway PPH"
+          }
+        },
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SparklineData(A_Measure.I06_Individual UPH Putaway PPH_[Dim_Calendar.Date])"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Green Days"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Yellow Days"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I06_Emp UPH Putaway Red Days"
           }
         }
       ],
@@ -447,6 +611,46 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "sparklines": [
+        {
+          "properties": {
+            "dataColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "markers": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "markerColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SparklineData(A_Measure.I06_Individual UPH Putaway PPH_[Dim_Calendar.Date])"
           }
         }
       ]

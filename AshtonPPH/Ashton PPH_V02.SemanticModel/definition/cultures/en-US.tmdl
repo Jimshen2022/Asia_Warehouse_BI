@@ -236,49 +236,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_transaction.commodity_code": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Fact_Transactions",
-			          "ConceptualProperty": "commodity_code"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "commodity code": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "commodity_code": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "commodity id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "commodity key": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
 			    "fact_transaction.pick_put_id": {
 			      "Definition": {
 			        "Binding": {

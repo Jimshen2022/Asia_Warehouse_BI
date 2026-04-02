@@ -3,9 +3,9 @@
   "name": "00e79d7be998c841288c",
   "position": {
     "x": 0,
-    "y": 77.323420074349443,
+    "y": 87.459807073954977,
     "z": 0,
-    "height": 642.37918215613388,
+    "height": 632.79742765273306,
     "width": 1280,
     "tabOrder": 0
   },
@@ -330,20 +330,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "103.85400423585276D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I03_Individual CG Unload PPH"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "193.2893885378614D"
                 }
               }
@@ -408,6 +394,20 @@
           "selector": {
             "metadata": "A_Measure.I03_Emp CG Unload Red Days"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "106.77169882990093D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I03_Individual CG Unload PPH"
+          }
         }
       ],
       "grid": [
@@ -431,46 +431,6 @@
         }
       ],
       "columnFormatting": [
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0.6
-                    }
-                  }
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I03_Individual CG Unload PPH"
-          }
-        },
         {
           "properties": {
             "styleHeader": {
@@ -593,6 +553,34 @@
           },
           "selector": {
             "metadata": "A_Measure.I03_Emp CG Unload Red Days"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I03_Individual CG Unload PPH"
           }
         }
       ],

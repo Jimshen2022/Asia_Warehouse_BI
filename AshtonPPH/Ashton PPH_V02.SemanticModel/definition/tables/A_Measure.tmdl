@@ -300,9 +300,10 @@ table A_Measure
 			    )
 			)
 		formatString: #,0.0
-		isHidden
 		displayFolder: I03_Individual CG Unload PPH
 		lineageTag: 888f60fa-a597-44d8-a0f6-efb78e0f105f
+
+		changedProperty = IsHidden
 
 	measure 'I04_Individual UPH Unload Pieces' =
 			
@@ -2644,6 +2645,21 @@ table A_Measure
 			)
 		displayFolder: I06_Individual UPH Putaway
 		lineageTag: 8e8f9c81-4160-43d4-8849-dae4226e8213
+
+	measure 'I03_Individual CG Unload PPH2' =
+			AVERAGEX (
+			    VALUES ( 'Fct_Supervisors_Hours_Pieces'[Employee_ID] ),
+			    CALCULATE (
+			        AVERAGE ( 'Fct_Supervisors_Hours_Pieces'[Group_Date_Team_by_Pieces_PPH] ),
+			        FILTER (
+			            'Fct_Supervisors_Hours_Pieces',
+			            'Fct_Supervisors_Hours_Pieces'[PPH_Type]
+			                IN { "Unloading" } && MID ( 'Fct_Supervisors_Hours_Pieces'[Group], 1, 2 ) = "CG"
+			        )
+			    )
+			)
+		displayFolder: I03_Individual CG Unload PPH
+		lineageTag: d46dc302-1a80-4bb7-85a9-1cd09e210c17
 
 	partition A_Measure = m
 		mode: import

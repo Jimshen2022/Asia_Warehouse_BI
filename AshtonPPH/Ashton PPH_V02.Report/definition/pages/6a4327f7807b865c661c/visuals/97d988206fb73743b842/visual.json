@@ -684,7 +684,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "103.00992141236674D"
+                  "Value": "109.85852861289344D"
                 }
               }
             }
@@ -766,14 +766,14 @@
         },
         {
           "properties": {
-            "styleHeader": {
+            "styleTotal": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "styleTotal": {
+            "styleHeader": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -950,5 +950,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "be0c0e20668c4cbe19fd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Calendar"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8759badf7cf84b3d2460",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "A_Measure"
+              }
+            },
+            "Property": "I03_Individual CG Unload Pieces"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c60e928ec1d8acfe67ab",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "A_Measure"
+              }
+            },
+            "Property": "I03_Individual CG Unload Hours"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fd87488d41c6b6e53ee7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "A_Measure"
+              }
+            },
+            "Property": "I03_Individual CG Unload PPH"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

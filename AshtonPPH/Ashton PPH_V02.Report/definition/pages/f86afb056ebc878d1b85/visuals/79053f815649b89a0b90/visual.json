@@ -13,25 +13,6 @@
     "visualType": "pivotTable",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim_Calendar"
-                    }
-                  },
-                  "Property": "Date"
-                }
-              },
-              "queryRef": "Dim_Calendar.Date",
-              "nativeQueryRef": "Date",
-              "active": true
-            }
-          ]
-        },
         "Rows": {
           "projections": [
             {
@@ -96,9 +77,99 @@
               },
               "queryRef": "A_Measure.I04_Individual UPH Unload PPH",
               "nativeQueryRef": "I04_Individual UPH Unload PPH"
+            },
+            {
+              "field": {
+                "SparklineData": {
+                  "Measure": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "A_Measure"
+                        }
+                      },
+                      "Property": "I04_Individual UPH Unload PPH"
+                    }
+                  },
+                  "Groupings": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim_Calendar"
+                          }
+                        },
+                        "Property": "Date"
+                      }
+                    }
+                  ],
+                  "ApplyCalculationGroupTo": "Point"
+                }
+              },
+              "queryRef": "SparklineData(A_Measure.I04_Individual UPH Unload PPH_[Dim_Calendar.Date])",
+              "nativeQueryRef": "I04_Individual UPH Unload PPH by Date"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I04_Emp UPH Unload Green Days"
+                }
+              },
+              "queryRef": "A_Measure.I04_Emp UPH Unload Green Days",
+              "nativeQueryRef": "I04_Emp UPH Unload Green Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I04_Emp UPH Unload Yellow Days"
+                }
+              },
+              "queryRef": "A_Measure.I04_Emp UPH Unload Yellow Days",
+              "nativeQueryRef": "I04_Emp UPH Unload Yellow Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "I04_Emp UPH Unload Red Days"
+                }
+              },
+              "queryRef": "A_Measure.I04_Emp UPH Unload Red Days",
+              "nativeQueryRef": "I04_Emp UPH Unload Red Days"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "A_Measure"
+                  }
+                },
+                "Property": "I04_Individual UPH Unload PPH"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "expansionStates": [
@@ -245,20 +316,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "81.6666634062423D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Dim_Calendar.Date"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "232.51817623725128D"
                 }
               }
@@ -273,7 +330,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "77.61853061019845D"
+                  "Value": "107.51610267244652D"
                 }
               }
             }
@@ -309,6 +366,62 @@
           "selector": {
             "metadata": "Dim_Employee_.Employee_ID"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118.58123602082829D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Green Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.49518082541906D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Yellow Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "113.7556164579578D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Red Days"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "358.4980345038359D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SparklineData(A_Measure.I04_Individual UPH Unload PPH_[Dim_Calendar.Date])"
+          }
         }
       ],
       "grid": [
@@ -317,7 +430,14 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }
@@ -325,34 +445,6 @@
         }
       ],
       "columnFormatting": [
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Dim_Calendar.Date"
-          }
-        },
         {
           "properties": {
             "styleHeader": {
@@ -391,6 +483,123 @@
           },
           "selector": {
             "metadata": "A_Measure.I04_Individual UPH Unload PPH"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SparklineData(A_Measure.I04_Individual UPH Unload PPH_[Dim_Calendar.Date])"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Green Days"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Yellow Days"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "A_Measure.I04_Emp UPH Unload Red Days"
           }
         }
       ],
@@ -465,6 +674,46 @@
           },
           "selector": {
             "metadata": "Dim_Employee_.Employee_Name"
+          }
+        }
+      ],
+      "sparklines": [
+        {
+          "properties": {
+            "dataColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "markerColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "markers": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SparklineData(A_Measure.I04_Individual UPH Unload PPH_[Dim_Calendar.Date])"
           }
         }
       ]

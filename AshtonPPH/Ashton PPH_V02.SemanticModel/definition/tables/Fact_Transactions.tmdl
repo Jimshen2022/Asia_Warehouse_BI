@@ -11,16 +11,6 @@ table Fact_Transactions
 
 		annotation SummarizationSetBy = Automatic
 
-	column commodity_code
-		dataType: string
-		lineageTag: be0fb1df-169a-4550-a84a-9260e16a09e4
-		summarizeBy: none
-		sourceColumn: commodity_code
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
 	column pick_put_id
 		dataType: string
 		lineageTag: b0f46674-cd6c-41cf-b8fe-e60adb978c43
@@ -161,6 +151,8 @@ table Fact_Transactions
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column product
 		dataType: string
 		lineageTag: 5ddb7148-8911-4350-82c3-1e2630b1d960
@@ -179,8 +171,6 @@ table Fact_Transactions
 		sourceColumn: shift_date
 
 		changedProperty = IsHidden
-
-		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 

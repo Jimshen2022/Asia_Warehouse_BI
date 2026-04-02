@@ -69,36 +69,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Position"
-                    }
-                  },
-                  "Property": "Position"
-                }
-              },
-              "queryRef": "Dim_Position.Position",
-              "nativeQueryRef": "Position",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim_Shift"
-                    }
-                  },
-                  "Property": "Shift"
-                }
-              },
-              "queryRef": "Dim_Shift.Shift",
-              "nativeQueryRef": "Shift",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "Dim_Metric"
                     }
                   },
@@ -185,42 +155,6 @@
                     }
                   },
                   "Property": "Employee_Name"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "Dim_Position.Position"
-            ],
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim_Position"
-                    }
-                  },
-                  "Property": "Position"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "Dim_Shift.Shift"
-            ],
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim_Shift"
-                    }
-                  },
-                  "Property": "Shift"
                 }
               }
             ],

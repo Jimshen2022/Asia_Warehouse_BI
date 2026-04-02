@@ -69,17 +69,17 @@
                 }
               }
             },
-            "relativePeriod": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Calendar Weeks'"
-                }
-              }
-            },
             "relativeDuration": {
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "relativePeriod": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Weeks'"
                 }
               }
             }
@@ -130,27 +130,27 @@
                             "Expression": {
                               "DateAdd": {
                                 "Expression": {
-                                  "Now": {}
+                                  "DateAdd": {
+                                    "Expression": {
+                                      "Now": {}
+                                    },
+                                    "Amount": 1,
+                                    "TimeUnit": 0
+                                  }
                                 },
                                 "Amount": -1,
                                 "TimeUnit": 1
                               }
                             },
-                            "TimeUnit": 1
+                            "TimeUnit": 0
                           }
                         },
                         "UpperBound": {
                           "DateSpan": {
                             "Expression": {
-                              "DateAdd": {
-                                "Expression": {
-                                  "Now": {}
-                                },
-                                "Amount": -1,
-                                "TimeUnit": 1
-                              }
+                              "Now": {}
                             },
-                            "TimeUnit": 1
+                            "TimeUnit": 0
                           }
                         }
                       }
