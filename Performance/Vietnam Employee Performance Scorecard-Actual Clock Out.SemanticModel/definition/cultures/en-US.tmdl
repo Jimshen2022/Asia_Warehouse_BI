@@ -2,8 +2,2407 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "indirect_history.of_battery_changes_approved": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "# of Battery Changes Approved"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Approved Battery Changes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.battery_change_time_approved": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "Battery Change Time Approved"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Approved Battery Time (Avg)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. of Approved Battery Change (Avg.)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. of Approved Battery Change": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.of_battery_changes_rejected": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "# of Battery Changes Rejected"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Rejected Battery Changes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.battery_change_time_rejected": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "Battery Change Time Rejected"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Rejected Battery Time (Avg)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. of Rejected Battery Change (Avg.)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. of Rejected Battery Change": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.of_meeting": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "# of Meeting"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Meeting Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.of_clean_up": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "# of Clean Up"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Clean Up Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.of_training": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "# of Training"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Training Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.meeting_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "Meeting Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mins. in Meeting (Total)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.training_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "Training Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mins. in Training (Total)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "indirect_history.clean_up_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indirect History",
+			          "ConceptualProperty": "Clean up Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mins. in Clean Up (Total)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.trans__per_hour_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Trans. per Hour Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trans. per Hour": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Transactions per Hour": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.of_trans__final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "# of Trans. Final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Transactions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "# of Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.gap_time_hrs_final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Gap Time (Hrs) Final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Gap Time (Hrs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.tran_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Tran Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tran. Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.tran_descript": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Tran Descript"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tran. Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.start_trans_datetime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Start Trans Datetime"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.end_trans_datetime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "End Trans Datetime"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gap.gap_time_for_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "GAP",
+			          "ConceptualProperty": "Gap time for detail"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "GAP (Hrs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pph.primary_efficiency_avg_m1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pph",
+			          "ConceptualProperty": "primary_efficiency_avg_m1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Primary Efficiency": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Primary Efficiency %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pph.primary_pph_avg_m1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pph",
+			          "ConceptualProperty": "primary_pph_avg_m1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Primary PPH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pph.secondary_pph_final_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pph",
+			          "ConceptualProperty": "Secondary PPH Final Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Secondary PPH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pph.secondary_time_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pph",
+			          "ConceptualProperty": "Secondary Time Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Secondary Time (Hrs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Secondary Time (Hrs/Day)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.f1_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "F1 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.f3_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "F3 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F3": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.f6_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "F6 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F6": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.ecomm_f7_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "ECOMM F7 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F7-EComm": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.shipping_f7_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "Shipping F7 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F7-Shipping": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "F7 Exceptions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.transfer_f7_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "Transfer F7 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F7-Transfers": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.f8_exceptions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "F8 Exceptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "F8": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Qty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.item_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "item_number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Item #": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.tran_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "tran_type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Exception": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.location_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "location_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.exception_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "exception_time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exceptions.control_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exceptions",
+			          "ConceptualProperty": "control_number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Control Number": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.perf__final_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Perf % Final Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Performance %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Perf. %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.eff__weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Eff % Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Efficiency %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Eff. %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.direct_time__weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Direct Time % Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Direct Time %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.lost_time__weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Lost Time % Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Lost Time %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.indirect_time__weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Indirect Time % Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Indirect Time %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.hours_worked_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Hours Worked Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "TTIW (Hrs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "TTIW (Hrs.)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.main_menu_transactions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Main Menu Transactions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Main Menu Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "# of Main Menu Logins": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.main_menu_minutes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Main Menu Minutes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Main Menu Mins.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. in Main Menu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Minutes Spent in Main Menu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.log_on_transactions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Log On Transactions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Log On Trans.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "# of Log On Trans": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.log_on_minutes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Log On Minutes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Log On Trans. Mins.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mins. in Log On": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Minutes Spent in Log On": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.break_log_ins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Break Log Ins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Break Log Ins": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "# of Break Logins": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.lunch_log_ins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Lunch Log Ins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Lunch Log Ins": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "# of Lunch Logins": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.process_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "process_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Process Code": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.hours_worked": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Hours Worked"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "TTIW (Hrs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.process_start_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "process_start_min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.process_end_max": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "process_end_max"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.process_transaction": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "process_transaction"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Process Transaction": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.overall_ttiw_all": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Overall TTIW all"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "TTIW (Mins.)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.direct_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Direct Time Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Direct Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.indirect_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Indirect Time Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Indirect Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.lost_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Lost Time Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Lost Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.non_performance_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "Non Performance Time Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Non Perf.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "summed_process_report.sam_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Summed Process Report",
+			          "ConceptualProperty": "SAM Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SAM": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.picking_occurrences_exceeding_sam_lock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Picking Occurrences Exceeding SAM Lock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Picking SAM Locks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Picking Trans": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.loading_occurrences_exceeding_sam_lock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Loading Occurrences Exceeding SAM Lock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Loading SAM Locks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Loading Trans": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.lunch_trans_exceeding_sam_lock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Lunch Trans Exceeding SAM Lock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Lunch Locks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.break_trans_exceeding_sam_lock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Break Trans Exceeding SAM Lock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# of Break Locks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.trans_under_sam_threshold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Trans under SAM Threshold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trans under SAM Lock": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.occurrences_exceeding_sam_lock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "Occurrences Exceeding SAM Lock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trans Exceeding SAM Lock": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.wh_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "wh_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DC": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.process_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "process_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Process": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.sam_lock_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "SAM Lock Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Lock Value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.process_transaction": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "process_transaction"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Process Transaction": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.first_process_start": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "first_process_start"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sam_overages.last_process_end": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SAM Overages",
+			          "ConceptualProperty": "last_process_end"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start__end_of_day.start_of_day_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start & End of Day",
+			          "ConceptualProperty": "Start of Day Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start of Day (Avg)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Start of Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Start of Day Mins.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start__end_of_day.end_of_day_weekly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start & End of Day",
+			          "ConceptualProperty": "End of Day Weekly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End of Day (Avg)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "End of Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "End of Day Mins.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "clock_in_clock_out.ee_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clock In Clock Out",
+			          "ConceptualProperty": "EE Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EE #": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "clock_in_clock_out.days_of_service": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clock In Clock Out",
+			          "ConceptualProperty": "Days of Service"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Days of Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "clock_in_clock_out.employee_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clock In Clock Out",
+			          "ConceptualProperty": "Employee Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Employee Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "clock_in_clock_out.dc_department": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Clock In Clock Out",
+			          "ConceptualProperty": "DC Department"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Department": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "goals.warehouse": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "goals",
+			          "ConceptualProperty": "Warehouse"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DC": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "goals.trantype_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "goals",
+			          "ConceptualProperty": "Trantype_Description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trantype Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pick_run_values.wh_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pick Run Values",
+			          "ConceptualProperty": "wh_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DC": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pick_run_values.plate_expectation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pick Run Values",
+			          "ConceptualProperty": "Plate Expectation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Threshold": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sup_lead_list.department": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sup Lead List",
+			          "ConceptualProperty": "DEPARTMENT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Department": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sup_lead_list.shift": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sup Lead List",
+			          "ConceptualProperty": "SHIFT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Shift": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sup_lead_list.role": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sup Lead List",
+			          "ConceptualProperty": "ROLE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Role": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Work Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "battery_change.start_tran_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Battery Change",
+			          "ConceptualProperty": "start_tran_time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start Tran Date/Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "battery_change.end_tran_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Battery Change",
+			          "ConceptualProperty": "end_tran_time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End Tran Date/Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "battery_change.total_minutes_of_battery_change": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Battery Change",
+			          "ConceptualProperty": "Total Minutes of Battery Change"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total Minutes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "battery_change.control_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Battery Change",
+			          "ConceptualProperty": "control_number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "1st Equipment": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "battery_change.control_number_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Battery Change",
+			          "ConceptualProperty": "control_number_2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Next Equipment": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f6_letdowns.description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "F6 Letdowns",
+			          "ConceptualProperty": "description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f6_letdowns.location_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "F6 Letdowns",
+			          "ConceptualProperty": "location_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f6_letdowns.datetime_stamp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "F6 Letdowns",
+			          "ConceptualProperty": "datetime_stamp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start_end_of_day.end_of_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start/End of Day",
+			          "ConceptualProperty": "End of Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "End of Day Minutes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "End of Day(Mins)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Avg End of Day Minutes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start_end_of_day.clock_out": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start/End of Day",
+			          "ConceptualProperty": "clock_out"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Clock Out": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start_end_of_day.start_of_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start/End of Day",
+			          "ConceptualProperty": "Start of Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start of Day Minutes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Start of Day(Mins)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Avg Start of Day Minutes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "start_end_of_day.clock_in": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Start/End of Day",
+			          "ConceptualProperty": "clock_in"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Clock In": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "definition_of_calculations.definition_of_calculation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Definition of Calculations",
+			          "ConceptualProperty": "Definition of Calculation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Calculation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
 			}
 		contentType: json
 
