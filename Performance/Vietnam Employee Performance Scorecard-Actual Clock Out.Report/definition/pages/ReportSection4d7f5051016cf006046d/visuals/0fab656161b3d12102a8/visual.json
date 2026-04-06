@@ -43,6 +43,20 @@
               "queryRef": "Definition of Calculations.Definition of Calculation",
               "nativeQueryRef": "Calculation",
               "displayName": "Calculation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Definition of Calculations"
+                    }
+                  },
+                  "Property": "SortOrder"
+                }
+              },
+              "queryRef": "Definition of Calculations.SortOrder",
+              "nativeQueryRef": "SortOrder"
             }
           ]
         }
@@ -57,7 +71,7 @@
                     "Entity": "Definition of Calculations"
                   }
                 },
-                "Property": "Measure"
+                "Property": "SortOrder"
               }
             },
             "direction": "Ascending"
@@ -105,13 +119,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "624.4763361598892D"
+                  "Value": "633.3505122709618D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Definition of Calculations.Definition of Calculation"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "221.43074581430744D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Definition of Calculations.Measure"
           }
         }
       ]

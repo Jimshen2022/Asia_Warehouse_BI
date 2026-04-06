@@ -719,5 +719,154 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "944ee9a9926950a97889",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "GAP"
+              }
+            },
+            "Property": "Tran Descript"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1fd5be720e6c73086b2f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "GAP"
+              }
+            },
+            "Property": "Tran Type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "66b5e6657033ac0b941a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "GAP"
+              }
+            },
+            "Property": "Start Trans Datetime"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "749b56cf5c0023d3659b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "GAP"
+              }
+            },
+            "Property": "End Trans Datetime"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0981d242ac1edbc27e86",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "GAP"
+              }
+            },
+            "Property": "Gap time for detail"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a6231d59d4eaf7329699",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "GAP"
+                  }
+                },
+                "Property": "COUNT"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "501509f76df1d057507b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Clock In Clock Out"
+              }
+            },
+            "Property": "DC"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c3a76c318505b7275a9c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Clock In Clock Out"
+              }
+            },
+            "Property": "EE Number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a1a8c423ef7d12daae96",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Clock In Clock Out"
+              }
+            },
+            "Property": "Employee Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2f30c7476c39f2464a42",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

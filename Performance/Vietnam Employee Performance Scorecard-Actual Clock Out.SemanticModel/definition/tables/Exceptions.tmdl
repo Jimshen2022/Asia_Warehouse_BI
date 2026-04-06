@@ -199,10 +199,12 @@ table Exceptions
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("ashley-edw.database.windows.net", "ASHLEY_EDW", [Query="SELECT [tran_type]#(lf)      ,[description]#(lf)      ,[exception_date]#(lf)      ,[exception_time]#(lf)      ,[employee_id]#(lf)      ,[wh_id]#(lf)      ,[suggested_value]#(lf)      ,[entered_value]#(lf)      ,[location_id]#(lf)      ,[item_number]#(lf)      ,[lot_number]#(lf)      ,[quantity]#(lf)      ,[hu_id]#(lf)      ,[load_id]#(lf)      ,[control_number]#(lf)      ,[line_number]#(lf)  FROM [PowerBI_Distribution].[ExceptionLog]#(lf)  --where [tran_type] IN ('DCF1','DCF3','DCF8','331F7','303F7','305F7')#(lf)  where [tran_type] not like '151%'#(lf)  and [tran_type] not like '341%'#(lf)  and [tran_type]<> 'ITMD'#(lf)  and [exception_date] > DATEADD(DAY,-15, GETDATE())#(lf)  and [wh_id] IN ('335','35')", CreateNavigationProperties=false, CommandTimeout=#duration(0, 2, 40, 0)]),
+				    Source = Sql.Database("ashley-edw.database.windows.net", "ASHLEY_EDW", [Query="SELECT [tran_type]#(lf)      ,[description]#(lf)      ,[exception_date]#(lf)      ,[exception_time]#(lf)      ,[employee_id]#(lf)      ,[wh_id]#(lf)      ,[suggested_value]#(lf)      ,[entered_value]#(lf)      ,[location_id]#(lf)      ,[item_number]#(lf)      ,[lot_number]#(lf)      ,[quantity]#(lf)      ,[hu_id]#(lf)      ,[load_id]#(lf)      ,[control_number]#(lf)      ,[line_number]#(lf)  FROM [PowerBI_Distribution].[ExceptionLog]#(lf)  --where [tran_type] IN ('DCF1','DCF3','DCF8','331F7','303F7','305F7')#(lf)  where [tran_type] not like '151%'#(lf)  and [tran_type] not like '341%'#(lf)  and [tran_type]<> 'ITMD'#(lf)  and [exception_date] > DATEADD(DAY,-15, GETDATE())#(lf)  and [wh_id] IN ('335')", CreateNavigationProperties=false, CommandTimeout=#duration(0, 2, 40, 0)]),
 				    #"Added Custom" = Table.AddColumn(Source, "WhseEmployee#", each [wh_id]&"-"&[employee_id])
 				in
 				    #"Added Custom"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

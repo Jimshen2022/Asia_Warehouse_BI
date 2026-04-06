@@ -348,7 +348,7 @@ table 'Summed Process Report'
 				in
 				    #"Added Conditional Column"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navigation
 

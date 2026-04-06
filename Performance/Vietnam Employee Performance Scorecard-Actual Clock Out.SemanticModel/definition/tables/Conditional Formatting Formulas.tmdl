@@ -124,6 +124,31 @@ table 'Conditional Formatting Formulas'
 	measure 'Lunch Over Time formatting_Jim' = IF('Summed Process Report'[Lunch Over Hours]>=0.083,"#DE6A73")
 		lineageTag: 1248db78-dfde-4e3b-92fb-6c8dd84e2e51
 
+	measure 'StartOfDayMins formatting_Jim' =
+			
+			SWITCH(
+			    TRUE(),
+			    ISBLANK('Start/End of Day'[Start of Day]), "#DE6A73", // 1. 如果为空值，显示红色
+			    'Start/End of Day'[Start of Day] > 60, "#DE6A73",     // 2. 大于60，显示红色
+			    'Start/End of Day'[Start of Day] > 30, "#FFD966",     // 3. 30到60之间，显示黄色
+			    'Start/End of Day'[Start of Day] >= 0, "#93C47D",     // 4. 0到30之间，显示绿色
+			    BLANK()                                               // 5. 其他异常情况（如负数）保持透明
+			)
+		lineageTag: 5fc1ed2d-7de3-47c1-bd60-782646e95877
+
+	measure 'EndOfDayMins formatting_Jim' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    ISBLANK('Start/End of Day'[End of Day]), "#DE6A73", 
+			    'Start/End of Day'[End of Day] > 60, "#DE6A73",   // 大于60为红色 (沿用你之前的红色)
+			    'Start/End of Day'[End of Day] > 30, "#FFD966",   // 30到60之间为黄色
+			    'Start/End of Day'[End of Day] >= 0, "#93C47D",   // 小于等于30为绿色 (假设不处理负数)
+			    BLANK()                                             // 处理空值，保持底色透明
+			)
+			```
+		lineageTag: 2f8987ea-d013-4aa7-8350-94a1f1135071
+
 	column Column1
 		dataType: string
 		lineageTag: 37be7af5-c6b8-462f-920a-b100780d66a8

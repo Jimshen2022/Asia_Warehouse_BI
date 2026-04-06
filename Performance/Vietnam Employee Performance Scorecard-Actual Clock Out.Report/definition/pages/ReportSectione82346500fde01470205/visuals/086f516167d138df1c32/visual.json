@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "086f516167d138df1c32",
   "position": {
-    "x": 495.36,
-    "y": 156.96,
+    "x": 495.82952815829526,
+    "y": 93.515981735159812,
     "z": 8000,
-    "height": 555.84,
-    "width": 292.32,
+    "height": 618.56925418569256,
+    "width": 284.44444444444446,
     "tabOrder": 8000
   },
   "visual": {
@@ -86,6 +86,20 @@
               },
               "queryRef": "Battery Change.Battery Change Time Total",
               "nativeQueryRef": "Total Minutes of Battery Change"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "A_Measure"
+                    }
+                  },
+                  "Property": "Employee PIV Check Times Counted"
+                }
+              },
+              "queryRef": "A_Measure.Employee PIV Check Times Counted",
+              "nativeQueryRef": "Employee PIV Check Times Counted"
             }
           ]
         }
