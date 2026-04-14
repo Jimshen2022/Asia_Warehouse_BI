@@ -66,18 +66,24 @@ table final_supply_table
 		annotation SummarizationSetBy = Automatic
 
 	column Fulfill_Rate
-		dataType: string
+		dataType: double
+		formatString: 0%;-0%;0%
 		lineageTag: 0881ff16-cde8-4069-8998-74b24e8e9f02
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Fulfill_Rate
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
 	column Trip_Counted
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: cecb2c36-cf82-4ca1-afe5-3894ed724fc2
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Trip_Counted
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
@@ -90,10 +96,13 @@ table final_supply_table
 		annotation SummarizationSetBy = Automatic
 
 	column SKUs
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 5e41cc33-2422-4f8c-b773-2231c6f7a252
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: SKUs
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 

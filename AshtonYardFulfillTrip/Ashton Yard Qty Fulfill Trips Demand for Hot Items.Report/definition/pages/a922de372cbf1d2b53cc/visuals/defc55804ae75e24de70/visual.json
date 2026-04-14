@@ -1,0 +1,406 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "defc55804ae75e24de70",
+  "position": {
+    "x": 32.118959107806695,
+    "y": 160.59479553903347,
+    "z": 0,
+    "height": 559.10780669144981,
+    "width": 1247.8810408921934,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "check_into_yard_time"
+                }
+              },
+              "queryRef": "final_supply_table.check_into_yard_time",
+              "nativeQueryRef": "check_into_yard_time"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "container_number"
+                }
+              },
+              "queryRef": "final_supply_table.container_number",
+              "nativeQueryRef": "container_number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "item_number"
+                }
+              },
+              "queryRef": "final_supply_table.item_number",
+              "nativeQueryRef": "item_number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "SKUs"
+                }
+              },
+              "queryRef": "CountNonNull(final_supply_table.SKUs)",
+              "nativeQueryRef": "SKUs"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "final_supply_table"
+                        }
+                      },
+                      "Property": "unreceived_qty"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(final_supply_table.unreceived_qty)",
+              "nativeQueryRef": "unreceived_qty"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "final_supply_table"
+                        }
+                      },
+                      "Property": "Allocated_Demand_Qty"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(final_supply_table.Allocated_Demand_Qty)",
+              "nativeQueryRef": "Sum of Allocated_Demand_Qty"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "Allocated_Status"
+                }
+              },
+              "queryRef": "Min(final_supply_table.Allocated_Status)",
+              "nativeQueryRef": "Allocated_Status"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "final_supply_table"
+                        }
+                      },
+                      "Property": "Fulfill_Rate"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(final_supply_table.Fulfill_Rate)",
+              "nativeQueryRef": "Sum of Fulfill_Rate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "Trip_Counted"
+                }
+              },
+              "queryRef": "final_supply_table.Trip_Counted",
+              "nativeQueryRef": "Trip_Counted"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "max_trip_dispatch_date"
+                }
+              },
+              "queryRef": "Min(final_supply_table.max_trip_dispatch_date)",
+              "nativeQueryRef": "max_trip_dispatch_date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "final_supply_table"
+                    }
+                  },
+                  "Property": "Allocated_Demand_Details"
+                }
+              },
+              "queryRef": "Min(final_supply_table.Allocated_Demand_Details)",
+              "nativeQueryRef": "Allocated_Demand_Details"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "final_supply_table"
+                  }
+                },
+                "Property": "SKUs"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "183.68773059121372D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "final_supply_table.check_into_yard_time"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fb385843606cbee81bec",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "container_number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3373e9ee5d3890b01764",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "item_number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "712d28f0cbbe5d0cc0b5",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "final_supply_table"
+                  }
+                },
+                "Property": "unreceived_qty"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bd0a98cf695074c09000",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "final_supply_table"
+                  }
+                },
+                "Property": "Allocated_Demand_Qty"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7c4899d2baed388c07e7",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "final_supply_table"
+                  }
+                },
+                "Property": "Fulfill_Rate"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cb93ded09e841a2a5356",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "SKUs"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "80217090904ee1e3058a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "check_into_yard_time"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a2c21920e265cb03c007",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "Trip_Counted"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7331e37da06410018ce2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "Allocated_Status"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "76611bb56030ee3ccd8c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "max_trip_dispatch_date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "43e43410b276a9c8b56e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "final_supply_table"
+              }
+            },
+            "Property": "Allocated_Demand_Details"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
