@@ -1,18 +1,37 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "e1dac95c135745f73aa1",
+  "name": "fe47ae40213692236138",
   "position": {
     "x": 0,
-    "y": 467.46268656716416,
-    "z": 0,
-    "height": 252.53731343283582,
-    "width": 1279.7014925373135,
-    "tabOrder": 0
+    "y": 40.030511060259343,
+    "z": 2001,
+    "height": 448.14645308924486,
+    "width": 1280,
+    "tabOrder": 2001
   },
   "visual": {
     "visualType": "pivotTable",
     "query": {
       "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Calendar"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "Dim_Calendar.Date",
+              "nativeQueryRef": "Date",
+              "active": true
+            }
+          ]
+        },
         "Rows": {
           "projections": [
             {
@@ -72,84 +91,11 @@
                       "Entity": "A_Measure"
                     }
                   },
-                  "Property": "I01_Individual Loading PPH"
+                  "Property": "I04_Individual UPH Unload PPH"
                 }
               },
-              "queryRef": "A_Measure.I01_Individual Loading PPH",
-              "nativeQueryRef": "I01_Individual Loading PPH"
-            },
-            {
-              "field": {
-                "SparklineData": {
-                  "Measure": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "A_Measure"
-                        }
-                      },
-                      "Property": "I01_Individual Loading PPH"
-                    }
-                  },
-                  "Groupings": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "Dim_Calendar"
-                          }
-                        },
-                        "Property": "Date"
-                      }
-                    }
-                  ],
-                  "ApplyCalculationGroupTo": "Point"
-                }
-              },
-              "queryRef": "SparklineData(A_Measure.I01_Individual Loading PPH_[Dim_Calendar.Date])",
-              "nativeQueryRef": "I01_Individual Loading PPH by Date"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "A_Measure"
-                    }
-                  },
-                  "Property": "I01_Emp Loading Green Days"
-                }
-              },
-              "queryRef": "A_Measure.I01_Emp Loading Green Days",
-              "nativeQueryRef": "I01_Emp Loading Green Days"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "A_Measure"
-                    }
-                  },
-                  "Property": "I01_Emp Loading Yellow Days"
-                }
-              },
-              "queryRef": "A_Measure.I01_Emp Loading Yellow Days",
-              "nativeQueryRef": "I01_Emp Loading Yellow Days"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "A_Measure"
-                    }
-                  },
-                  "Property": "I01_Emp Loading Red Days"
-                }
-              },
-              "queryRef": "A_Measure.I01_Emp Loading Red Days",
-              "nativeQueryRef": "I01_Emp Loading Red Days"
+              "queryRef": "A_Measure.I04_Individual UPH Unload PPH",
+              "nativeQueryRef": "I04_Individual UPH Unload PPH"
             }
           ]
         }
@@ -164,7 +110,7 @@
                     "Entity": "A_Measure"
                   }
                 },
-                "Property": "I01_Individual Loading PPH"
+                "Property": "I04_Individual UPH Unload PPH"
               }
             },
             "direction": "Descending"
@@ -182,11 +128,35 @@
             "queryRefs": [
               "Dim_Position.Position"
             ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Position"
+                    }
+                  },
+                  "Property": "Position"
+                }
+              }
+            ],
             "isPinned": true
           },
           {
             "queryRefs": [
               "Dim_Employee_.Employee_ID"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Employee_"
+                    }
+                  },
+                  "Property": "Employee_ID"
+                }
+              }
             ],
             "isPinned": true
           },
@@ -254,6 +224,198 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "icon": {
+              "kind": "Icon",
+              "layout": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Before'"
+                  }
+                }
+              },
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              },
+              "value": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "36D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 4,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "1000D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleHigh'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "26D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "36D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleMedium'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "0D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "A_Measure"
+                                      }
+                                    },
+                                    "Property": "I04_Individual UPH Unload PPH"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "26D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleLow'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "A_Measure.I04_Individual UPH Unload PPH"
+          }
         }
       ],
       "columnHeaders": [
@@ -292,7 +454,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "245.78581489825208D"
+                  "Value": "232.51817623725128D"
                 }
               }
             }
@@ -306,13 +468,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "99.51633925841675D"
+                  "Value": "107.51610267244652D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "A_Measure.I01_Individual Loading PPH"
+            "metadata": "A_Measure.I04_Individual UPH Unload PPH"
           }
         },
         {
@@ -320,13 +482,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "116.14790087859927D"
+                  "Value": "127.37620431401822D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Green Days"
+            "metadata": "Dim_Position.Position"
           }
         },
         {
@@ -334,41 +496,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "120.21457086132024D"
+                  "Value": "80.2315123310003D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Yellow Days"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "112.40834330476919D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Red Days"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "287.9219122891675D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "SparklineData(A_Measure.I01_Individual Loading PPH_[Dim_Calendar.Date])"
+            "metadata": "Dim_Employee_.Employee_ID"
           }
         }
       ],
@@ -378,42 +512,14 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "gridVertical": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridVerticalWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "gridHorizontal": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridHorizontalWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "9D"
                 }
               }
             },
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
                 }
               }
             }
@@ -458,124 +564,7 @@
             }
           },
           "selector": {
-            "metadata": "A_Measure.I01_Individual Loading PPH"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 8,
-                      "Percent": 0.6
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "SparklineData(A_Measure.I01_Individual Loading PPH_[Dim_Calendar.Date])"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Green Days"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Yellow Days"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "A_Measure.I01_Emp Loading Red Days"
+            "metadata": "A_Measure.I04_Individual UPH Unload PPH"
           }
         }
       ],
@@ -595,17 +584,17 @@
       "rowHeaders": [
         {
           "properties": {
-            "repeatRowHeaders": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "showExpandCollapseButtons": {
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "repeatRowHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -650,59 +639,6 @@
           },
           "selector": {
             "metadata": "Dim_Employee_.Employee_Name"
-          }
-        }
-      ],
-      "sparklines": [
-        {
-          "properties": {
-            "dataColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "markers": {
-              "expr": {
-                "Literal": {
-                  "Value": "6D"
-                }
-              }
-            },
-            "markerColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "SparklineData(A_Measure.I01_Individual Loading PPH_[Dim_Calendar.Date])"
-          }
-        }
-      ],
-      "blankRows": [
-        {
-          "properties": {
-            "showBlankRows": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
           }
         }
       ]
@@ -786,7 +722,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Ashton Individual PPH - Loading Details'"
+                  "Value": "'Ashton Individual PPH - UPH Unload Details'"
                 }
               }
             }
@@ -869,39 +805,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {
-            "keepLayerOrder": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "spacing": [
-        {
-          "properties": {
-            "customizeSpacing": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "spaceBelowTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
                 }
               }
             }
